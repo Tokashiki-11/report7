@@ -3,8 +3,8 @@
 void sortDescending(int array[], int size);
 void sortDescending(int array[], int size){
     for (int i=0; i<size; i++){ //バブルソート
-        for (int j=0; j<size; j++){
-            if (array[i] > array[j]){
+        for (int j=i+1; j<size; j++){
+            if (array[i] < array[j]){
                 int temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
@@ -21,6 +21,8 @@ int main(){
         printf("%d ", scores[i]);
     }
     printf("\n");
+
+    sortDescending(scores, SIZE);
 
     printf("result = ");
     for (int i=0; i<SIZE; i++){
