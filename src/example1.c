@@ -7,6 +7,7 @@ int main(){
     for (int i=0; i<SIZE; i++){
         printf("%d ", scores[i]);
     }
+    printf("\n");
     
     for (int i=0; i<SIZE; i++){ //バブルソート
         for (int j=0; j<SIZE; j++){
@@ -14,5 +15,10 @@ int main(){
 
             }
         }
+    }
+
+    printf("result = ");
+    for (int i=0; i<SIZE; i++){
+        printf("%d ", scores[i]);
     }
 }
